@@ -1,66 +1,24 @@
-<html lang='en'>
-
-
-<body>
-  <!-- Navigation Bar -->
-  <div class='header'>
-    <div class='container'>
-      <div class='navbar'>
-        <div class='logo'>
-          <a href='/'>
-            <h2>ART (C)ART</h2>
-          </a>
-        </div>
-        <nav>
-          <ul id='MenuItems'>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/products'>Products</a></li>
-            <li><a id='logout' href='#'>Log out</a></li>
-            <li><a href='/upload'>Upload</a></li>
-            <li><a href='/account'>Account</a></li>
-          </ul>
-        </nav>
-        <img src='images/menu.png' onclick='menutoggle()' class='menu-icon' />
-      </div>
-      <div class='row'>
-        <div class='col-2' id='relative-positioning'>
-          <h1>
-            
-          </h1>
-
-          <br>
-
-          <p>
-           
-          </p>
-          
-          <a href='/products' class='btn'>Explore Now &#8594;</a>
-        </div>
-        <div class='col-2' id='relative-positioning'>
-          <img src='images/a-sunday-afternoon-on-the-island-of-la-grande-jatte.jpg' />
-        </div>
-      </div>
-    </div>
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/project/{{project.id}}">{{project.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
+      needed!
+    </p>
+    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
   </div>
-  {{{body}}}
-  <!-- Footer -->
-  <div class='footer'>
-    <div class='container'>
-      <div class='row'>
-        <div class='footer-col1'>
-          <h3>Download the Cookies App</h3>
-          <div class='app-logo'>
-            <img src='images/play-store.png' />
-            <img src='images/app-store.png' />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <p class='copyright'>&#169 2022 - Get These Cookies, Inc.</p>
-    </div>
+  <div class="col-md-7">
+    <p>
+      {{project.description}}
+    </p>
   </div>
-  <script src='./js/toggle-menu.js'></script>
-  <script src='./js/logout.js'></script>
-</body>
-
-</html>
+</div>
+{{/each}}
