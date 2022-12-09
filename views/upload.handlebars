@@ -1,0 +1,38 @@
+<div class='row'>
+  <h2 class='title-2'>Upload a Product</h2>
+</div>
+<div class='upload-page'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-2'>
+        <div class='upload-form-container'>
+          <div class='form-btn'>
+            <span>Upload</span>
+            <hr id='indicator-2' />
+          </div>
+          <form id='uploadForm'>
+            <input type='Title' placeholder='Title' id='Title' />
+            <input type='Price' placeholder='Price' id='Price' />
+            <input type='Medium' placeholder='Medium' id='Medium' />
+            <input type='Size' placeholder='Size' id='Size' />
+            <input type='Year' placeholder='Year' id='Year' />
+            <input type='Signed' placeholder='Signed' id='Signed' />
+            <div class='form-btn'>
+              <span id='span-margin-top'>Image</span>
+              <hr id='indicator-3' />
+            </div>
+            <input
+              type='file'
+              id='picture'
+              name='image'
+              accept='image/png, image/jpeg'
+              class='upload'
+            />
+            <button type='Upload' id='btn' class='btn'>Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='./js/client-side.js'></script>
