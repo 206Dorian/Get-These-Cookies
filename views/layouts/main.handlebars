@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{{!-- <!DOCTYPE html>
+<html lang="en"> --}}
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <title>GTCookies</title>
   
   <link rel="stylesheet" href="/css/style.css ">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> --}}
 
 </head>
 
@@ -22,16 +22,19 @@
       <nav>
         <div class="div is-centered is-2">
         <!-- Conditionally render login or logout links -->
-        <a href="/login">login or </a>
+        <a href="/login">login </a>
         <a href="/login">sign up</a>
+        <a href="/dashboard">dashboard </a>
+        <a href="/">homepage</a>
         {{!-- {{/if}} --}}
         </div>
       </nav>
 
     </header>
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
+      <div>
       {{{ body }}}
+      </div>
     </main>
     <footer>
       
@@ -44,4 +47,4 @@
   {{/if}}
 </body>
 
-</html>
+{{!-- </html> --}}

@@ -1,11 +1,15 @@
 <!-- Loop over each object in the projects array -->
 {{#each posts }}
-<card = class "card">
+<card class="card">
   <br>
   <div class= "is primary">
-    <h2>{{title}}</h2>
+    <h2> <a href="/post/{{id}}"> {{title}}</a></h2>
   </div>
 <br>
+ <div class="is link is-2">
+    <p>{{user.name}}</p>
+  </div>
+  <br>
   <div class="is link is-2">
     <p>{{postbody}}</p>
   </div>
