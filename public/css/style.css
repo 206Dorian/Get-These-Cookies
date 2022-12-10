@@ -1,11 +1,13 @@
 .div {
   display: inline-block;
-  background: #1688ca;
+  background: #c43283;
   color: #ffffff;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
   transition: background 0.5s;
+  text-align: center ;
+
 }
 
 
