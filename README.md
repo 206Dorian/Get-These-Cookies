@@ -2,7 +2,7 @@
 
 ## Description: The new tw*tter
 
-A new social media app designed for tht inevitable downfall of twitter.
+A new social media app designed for the inevitable downfall of twitter.  Get these cookies baby!
 
 Usage:
 https://github.com/206Dorian/Get-These-Cookies
