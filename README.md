@@ -5,7 +5,7 @@
 A new social media app designed for tht inevitable downfall of twitter.
 
 Usage:
-https://206dorian.github.io/Dorian-Douglas-Designs/
+https://github.com/206Dorian/Get-These-Cookies
 
 <img src="/public/images/cookies.png"> 
 
